@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet2" targetNamespace="http://tempuri.org/DataSet2.xsd" xmlns:mstns="http://tempuri.org/DataSet2.xsd" xmlns="http://tempuri.org/DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.Gym.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="Oracle.ManagedDataAccess.Client" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SEARCHTableAdapter" GeneratorDataComponentClassName="SEARCHTableAdapter" Name="SEARCH" UserDataComponentName="SEARCHTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="ZHANEL.SEARCH" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_АБ, ИМЯ, ФАМИЛИЯ, ВИД, НАЗВАНИЕ FROM ZHANEL.SEARCH</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_АБ" DataSetColumn="ID_АБ" />
+              <Mapping SourceColumn="ИМЯ" DataSetColumn="ИМЯ" />
+              <Mapping SourceColumn="ФАМИЛИЯ" DataSetColumn="ФАМИЛИЯ" />
+              <Mapping SourceColumn="ВИД" DataSetColumn="ВИД" />
+              <Mapping SourceColumn="НАЗВАНИЕ" DataSetColumn="НАЗВАНИЕ" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SEARCHFORSUBTableAdapter" GeneratorDataComponentClassName="SEARCHFORSUBTableAdapter" Name="SEARCHFORSUB" UserDataComponentName="SEARCHFORSUBTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="ZHANEL.SEARCHFORSUB" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_АБ, ID_АБОНЕМЕНТА, ФАМИЛИЯ, ВИД, НАЗВАНИЕ FROM ZHANEL.SEARCHFORSUB</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_АБ" DataSetColumn="ID_АБ" />
+              <Mapping SourceColumn="ID_АБОНЕМЕНТА" DataSetColumn="ID_АБОНЕМЕНТА" />
+              <Mapping SourceColumn="ФАМИЛИЯ" DataSetColumn="ФАМИЛИЯ" />
+              <Mapping SourceColumn="ВИД" DataSetColumn="ВИД" />
+              <Mapping SourceColumn="НАЗВАНИЕ" DataSetColumn="НАЗВАНИЕ" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SEARCHSUBTableAdapter" GeneratorDataComponentClassName="SEARCHSUBTableAdapter" Name="SEARCHSUB" UserDataComponentName="SEARCHSUBTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="ZHANEL.SEARCHSUB" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_АБ, ИМЯ, ФАМИЛИЯ, ВИД, НАЗВАНИЕ FROM ZHANEL.SEARCHSUB</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_АБ" DataSetColumn="ID_АБ" />
+              <Mapping SourceColumn="ИМЯ" DataSetColumn="ИМЯ" />
+              <Mapping SourceColumn="ФАМИЛИЯ" DataSetColumn="ФАМИЛИЯ" />
+              <Mapping SourceColumn="ВИД" DataSetColumn="ВИД" />
+              <Mapping SourceColumn="НАЗВАНИЕ" DataSetColumn="НАЗВАНИЕ" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Абонемент1_matTableAdapter" GeneratorDataComponentClassName="Абонемент1_matTableAdapter" Name="Абонемент1_mat" UserDataComponentName="Абонемент1_matTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="ZHANEL.Абонемент1_mat" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_АБОНЕМЕНТА, ИМЯ FROM ZHANEL."Абонемент1_mat"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_АБОНЕМЕНТА" DataSetColumn="ID_АБОНЕМЕНТА" />
+              <Mapping SourceColumn="ИМЯ" DataSetColumn="ИМЯ" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSet2" msprop:Generator_UserDSName="DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SEARCH" msprop:Generator_TableClassName="SEARCHDataTable" msprop:Generator_TableVarName="tableSEARCH" msprop:Generator_TablePropName="SEARCH" msprop:Generator_RowDeletingName="SEARCHRowDeleting" msprop:Generator_RowChangingName="SEARCHRowChanging" msprop:Generator_RowEvHandlerName="SEARCHRowChangeEventHandler" msprop:Generator_RowDeletedName="SEARCHRowDeleted" msprop:Generator_UserTableName="SEARCH" msprop:Generator_RowChangedName="SEARCHRowChanged" msprop:Generator_RowEvArgName="SEARCHRowChangeEvent" msprop:Generator_RowClassName="SEARCHRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_АБ" msprop:Generator_ColumnVarNameInTable="columnID_АБ" msprop:Generator_ColumnPropNameInRow="ID_АБ" msprop:Generator_ColumnPropNameInTable="ID_АБColumn" msprop:Generator_UserColumnName="ID_АБ" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ИМЯ" msprop:Generator_ColumnVarNameInTable="columnИМЯ" msprop:Generator_ColumnPropNameInRow="ИМЯ" msprop:Generator_ColumnPropNameInTable="ИМЯColumn" msprop:Generator_UserColumnName="ИМЯ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ФАМИЛИЯ" msprop:Generator_ColumnVarNameInTable="columnФАМИЛИЯ" msprop:Generator_ColumnPropNameInRow="ФАМИЛИЯ" msprop:Generator_ColumnPropNameInTable="ФАМИЛИЯColumn" msprop:Generator_UserColumnName="ФАМИЛИЯ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ВИД" msprop:Generator_ColumnVarNameInTable="columnВИД" msprop:Generator_ColumnPropNameInRow="ВИД" msprop:Generator_ColumnPropNameInTable="ВИДColumn" msprop:Generator_UserColumnName="ВИД" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="НАЗВАНИЕ" msprop:Generator_ColumnVarNameInTable="columnНАЗВАНИЕ" msprop:Generator_ColumnPropNameInRow="НАЗВАНИЕ" msprop:Generator_ColumnPropNameInTable="НАЗВАНИЕColumn" msprop:Generator_UserColumnName="НАЗВАНИЕ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SEARCHFORSUB" msprop:Generator_TableClassName="SEARCHFORSUBDataTable" msprop:Generator_TableVarName="tableSEARCHFORSUB" msprop:Generator_TablePropName="SEARCHFORSUB" msprop:Generator_RowDeletingName="SEARCHFORSUBRowDeleting" msprop:Generator_RowChangingName="SEARCHFORSUBRowChanging" msprop:Generator_RowEvHandlerName="SEARCHFORSUBRowChangeEventHandler" msprop:Generator_RowDeletedName="SEARCHFORSUBRowDeleted" msprop:Generator_UserTableName="SEARCHFORSUB" msprop:Generator_RowChangedName="SEARCHFORSUBRowChanged" msprop:Generator_RowEvArgName="SEARCHFORSUBRowChangeEvent" msprop:Generator_RowClassName="SEARCHFORSUBRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_АБ" msprop:Generator_ColumnVarNameInTable="columnID_АБ" msprop:Generator_ColumnPropNameInRow="ID_АБ" msprop:Generator_ColumnPropNameInTable="ID_АБColumn" msprop:Generator_UserColumnName="ID_АБ" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ID_АБОНЕМЕНТА" msprop:Generator_ColumnVarNameInTable="columnID_АБОНЕМЕНТА" msprop:Generator_ColumnPropNameInRow="ID_АБОНЕМЕНТА" msprop:Generator_ColumnPropNameInTable="ID_АБОНЕМЕНТАColumn" msprop:Generator_UserColumnName="ID_АБОНЕМЕНТА" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ФАМИЛИЯ" msprop:Generator_ColumnVarNameInTable="columnФАМИЛИЯ" msprop:Generator_ColumnPropNameInRow="ФАМИЛИЯ" msprop:Generator_ColumnPropNameInTable="ФАМИЛИЯColumn" msprop:Generator_UserColumnName="ФАМИЛИЯ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ВИД" msprop:Generator_ColumnVarNameInTable="columnВИД" msprop:Generator_ColumnPropNameInRow="ВИД" msprop:Generator_ColumnPropNameInTable="ВИДColumn" msprop:Generator_UserColumnName="ВИД" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="НАЗВАНИЕ" msprop:Generator_ColumnVarNameInTable="columnНАЗВАНИЕ" msprop:Generator_ColumnPropNameInRow="НАЗВАНИЕ" msprop:Generator_ColumnPropNameInTable="НАЗВАНИЕColumn" msprop:Generator_UserColumnName="НАЗВАНИЕ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SEARCHSUB" msprop:Generator_TableClassName="SEARCHSUBDataTable" msprop:Generator_TableVarName="tableSEARCHSUB" msprop:Generator_TablePropName="SEARCHSUB" msprop:Generator_RowDeletingName="SEARCHSUBRowDeleting" msprop:Generator_RowChangingName="SEARCHSUBRowChanging" msprop:Generator_RowEvHandlerName="SEARCHSUBRowChangeEventHandler" msprop:Generator_RowDeletedName="SEARCHSUBRowDeleted" msprop:Generator_UserTableName="SEARCHSUB" msprop:Generator_RowChangedName="SEARCHSUBRowChanged" msprop:Generator_RowEvArgName="SEARCHSUBRowChangeEvent" msprop:Generator_RowClassName="SEARCHSUBRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_АБ" msprop:Generator_ColumnVarNameInTable="columnID_АБ" msprop:Generator_ColumnPropNameInRow="ID_АБ" msprop:Generator_ColumnPropNameInTable="ID_АБColumn" msprop:Generator_UserColumnName="ID_АБ" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ИМЯ" msprop:Generator_ColumnVarNameInTable="columnИМЯ" msprop:Generator_ColumnPropNameInRow="ИМЯ" msprop:Generator_ColumnPropNameInTable="ИМЯColumn" msprop:Generator_UserColumnName="ИМЯ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ФАМИЛИЯ" msprop:Generator_ColumnVarNameInTable="columnФАМИЛИЯ" msprop:Generator_ColumnPropNameInRow="ФАМИЛИЯ" msprop:Generator_ColumnPropNameInTable="ФАМИЛИЯColumn" msprop:Generator_UserColumnName="ФАМИЛИЯ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ВИД" msprop:Generator_ColumnVarNameInTable="columnВИД" msprop:Generator_ColumnPropNameInRow="ВИД" msprop:Generator_ColumnPropNameInTable="ВИДColumn" msprop:Generator_UserColumnName="ВИД" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="НАЗВАНИЕ" msprop:Generator_ColumnVarNameInTable="columnНАЗВАНИЕ" msprop:Generator_ColumnPropNameInRow="НАЗВАНИЕ" msprop:Generator_ColumnPropNameInTable="НАЗВАНИЕColumn" msprop:Generator_UserColumnName="НАЗВАНИЕ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Абонемент1_mat" msprop:Generator_TableClassName="Абонемент1_matDataTable" msprop:Generator_TableVarName="tableАбонемент1_mat" msprop:Generator_TablePropName="Абонемент1_mat" msprop:Generator_RowDeletingName="Абонемент1_matRowDeleting" msprop:Generator_RowChangingName="Абонемент1_matRowChanging" msprop:Generator_RowEvHandlerName="Абонемент1_matRowChangeEventHandler" msprop:Generator_RowDeletedName="Абонемент1_matRowDeleted" msprop:Generator_UserTableName="Абонемент1_mat" msprop:Generator_RowChangedName="Абонемент1_matRowChanged" msprop:Generator_RowEvArgName="Абонемент1_matRowChangeEvent" msprop:Generator_RowClassName="Абонемент1_matRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_АБОНЕМЕНТА" msprop:Generator_ColumnVarNameInTable="columnID_АБОНЕМЕНТА" msprop:Generator_ColumnPropNameInRow="ID_АБОНЕМЕНТА" msprop:Generator_ColumnPropNameInTable="ID_АБОНЕМЕНТАColumn" msprop:Generator_UserColumnName="ID_АБОНЕМЕНТА" type="xs:long" minOccurs="0" />
+              <xs:element name="ИМЯ" msprop:Generator_ColumnVarNameInTable="columnИМЯ" msprop:Generator_ColumnPropNameInRow="ИМЯ" msprop:Generator_ColumnPropNameInTable="ИМЯColumn" msprop:Generator_UserColumnName="ИМЯ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
